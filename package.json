@@ -1,0 +1,35 @@
+{
+  "name": "clijs",
+  "version": "0.0.0",
+  "description": "Nodeschool Workshopper for learning to build shell tools with javascript",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sequoia/clijs.git"
+  },
+  "keywords": [
+    "nodeschool",
+    "workshopper",
+    "shell",
+    "cli",
+    "command-line"
+  ],
+  "author": "Sequoia McDowell",
+  "license": "GPL3",
+  "bugs": {
+    "url": "https://github.com/Sequoia/clijs/issues"
+  },
+  "homepage": "https://github.com/Sequoia/clijs",
+  "dependencies": {
+    "lodash": "^3.5.0",
+    "lorem-ipsum": "^1.0.1",
+    "workshopper": "~2.3.1",
+    "workshopper-exercise": "sequoia/workshopper-exercise#basic-boilerplate"
+  },
+  "bin": {
+    "clijs": "./main.js"
+  },
+  "preferGlobal": true
+}
