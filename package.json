@@ -26,13 +26,15 @@
     "adventure-map": "^1.0.5",
     "adventure-verify": "^2.2.0",
     "lodash": "^3.5.0",
-    "lorem-ipsum": "^1.0.1"
+    "lorem-ipsum": "^1.0.1",
+    "minimist": "^1.1.1"
   },
   "bin": {
     "clijs": "./index.js"
   },
   "preferGlobal": true,
   "exercises": {
-    "Using argv": "exercises/using_argv/"
+    "Using process.argv": "exercises/using_argv/",
+    "Using Minimist": "exercises/using_minimist/"
   }
 }
