@@ -23,13 +23,16 @@
   },
   "homepage": "https://github.com/Sequoia/clijs",
   "dependencies": {
+    "adventure-map": "^1.0.5",
+    "adventure-verify": "^2.2.0",
     "lodash": "^3.5.0",
-    "lorem-ipsum": "^1.0.1",
-    "workshopper": "~2.3.1",
-    "workshopper-exercise": "sequoia/workshopper-exercise#basic-boilerplate"
+    "lorem-ipsum": "^1.0.1"
   },
   "bin": {
-    "clijs": "./main.js"
+    "clijs": "./index.js"
   },
-  "preferGlobal": true
+  "preferGlobal": true,
+  "exercises": {
+    "Using argv": "exercises/using_argv/"
+  }
 }
