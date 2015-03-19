@@ -15,6 +15,7 @@ exports.boilerplate = fs.readFileSync(__dirname + '/boilerplate.js', 'utf8');
 var word = ipsum({ count:1, units:'words' });
 
 //three ways of sending --word={word}
+//@TODO change quoted arg to extra-arg
 var argVariants = [
   [util.format('--word=%s',word)],
   [util.format('--word="%s"',word)],
