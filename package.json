@@ -25,6 +25,7 @@
   "dependencies": {
     "adventure-map": "^1.0.5",
     "adventure-verify": "^2.2.0",
+    "chalk": "^1.0.0",
     "lodash": "^3.5.0",
     "lorem-ipsum": "^1.0.1",
     "minimist": "^1.1.1"
@@ -35,6 +36,7 @@
   "preferGlobal": true,
   "exercises": {
     "Using process.argv": "exercises/using_argv/",
-    "Using Minimist": "exercises/using_minimist/"
+    "Using Minimist": "exercises/using_minimist/",
+    "More Minimist": "exercises/more_minimist/"
   }
 }
