@@ -22,7 +22,8 @@ the screen using `console.log`. The following switches should be supported:
 
 ## Hints
 
-* Don't treat `-m` & `--multiply` as different args-- use aliases!
+* Don't treat `-m` & `--multiply` as different args-- use aliases! (Read The
+  Friendly Manual)
 * We'll assume users will **not** pass both `--multiply` & `--divide` at once
 
 ## Resources
