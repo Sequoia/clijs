@@ -1,9 +1,16 @@
 var args = process.argv.slice(2);
 
-if(args.length === 2){
-  console.log(args[1]);
-}else{
-  var word = args[0].split('=').pop();
-  word = word.replace(/"/g,'');
-  console.log(word);
-}
+var found = false;
+
+args.forEach(function(arg, i){
+  if(found) return;
+
+  if(/^--word/.test(arg)){
+    found=true;
+    if(/=/.test(arg)){
+      console.log(arg.split('=').pop());
+      return;
+    }
+    console.log(args[i+1]);
+  }
+});

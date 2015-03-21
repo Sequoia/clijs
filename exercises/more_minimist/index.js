@@ -44,4 +44,5 @@ exports.run = function(args) {
   console.info('running: ' + chalk.yellow(process.execPath + ' ' + args.join(' '))+'');
   var ps = cp.spawn(process.execPath, args)
   ps.stdout.pipe(process.stdout);
+  ps.stderr.pipe(process.stderr);
 }

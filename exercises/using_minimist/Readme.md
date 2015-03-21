@@ -1,6 +1,10 @@
-In that last exercise you handled three ways of passing values via switches, but
-that didn't even include all variations (e.g. single quotes: `--word='foo'`). I
-know what you're thinking: "There's Got To Be A Better Way!" Well There Is!
+In that last exercise you handled passing values via switches. That was one
+switch passing one string. Imagine if you were writing a tool that had a four or 
+five or a dozen different switches, along with flags, combined short switches
+(`-ab` for `-a -b`), and of course aliases... You can see how this quickly becomes
+a complex task. I know what you're thinking: "There's Got To Be A Better Way!"
+
+Well There Is!
 
 There are several libraries that make it easier to parse command line switches
 and arguments, **minimist** is a popular one and we'll be using it for this
@@ -9,10 +13,11 @@ exercise. Be sure to refer to the minimist docs!!
 ----
 
 # Task
+$ node yoursolution.js 
 
 Repeat the last exercise, this time using minimist. The same switches will be
-passed (`--word=foo`, `--word="foo"`, `--word foo`) during 3 separate calls to
-your script, as before.
+passed (`--word=foo`, `[other switches] --word=foo [other switches]`, `--word foo`)
+during 3 separate calls to your script, as before.
 
 ## Conditions
 
@@ -24,4 +29,4 @@ your script, as before.
 
 ## Resources
 
-* https://github.com/substack/minimist
+* minimist docs: https://github.com/substack/minimist

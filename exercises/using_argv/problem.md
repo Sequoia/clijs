@@ -8,9 +8,9 @@ You're job is to write a program that will accept a word via the command line
 will use to pass the `--word`! It might be passed any of the following ways:
 
 ```sh
-$ node yoursolution.js --word=foo
 $ node yoursolution.js --word foo
-$ node yoursolution.js --word="foo"
+$ node yoursolution.js [other switches] --word=foo [other switches]
+$ node yoursolution.js --word=foo
 ```
 
 ----
@@ -21,10 +21,10 @@ Write a script that accepts a `--word` & prints it out using `console.log`
 
 ## Hints
 
-* Put `console.log(process.argv)` in your script and try `clijs run yours.js` a few times to see what's coming thru
+* Put `console.log(process.argv)` in your script and try `clijs run yours.js` a
+  few times to see what's coming thru
 * Remember that the first two arguments (in `process.argv`) are
-	**node** and **yourscript.js**. That's why the switches and other arguments
-	start at `process.argv[2]`
+**node** and **yourscript.js**.
 * The word is randomly generated-- it won't be the same each time :)
 
 ## Resources
