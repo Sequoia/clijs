@@ -25,6 +25,7 @@ to see what's coming thru
 * Remember that the first two arguments (in `process.argv`) are 
 **node** and **yourscript.js**.
 * The word is randomly generated-- it won't be the same each time :)
+* Run `clijs verify [yourscript.js]` to test your solution!
 
 ## Resources
 * https://nodejs.org/api/process.html#process_process_argv

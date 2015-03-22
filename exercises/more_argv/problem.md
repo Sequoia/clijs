@@ -19,6 +19,8 @@ Write a script that accepts a `--word` & prints it out using `console.log`
 
 * Use the script from your last exercise as a starting point
 * Look at docs on `String.match` or `Regexp.test`
+* Use `clijs run [yours.js]` to run your solution & `clijs verify [yours.js]` 
+to test!
 
 ## Resources
 

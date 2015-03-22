@@ -25,7 +25,11 @@ during 3 separate calls to your script, as before.
 
 ## Hints
 
-* `npm install minimist` in your exercise directory
+* If you run using `clijs run [yours.js]`, `minimist` will be available in that
+  context and switches will be passed to it automatically
+* If you want to call your script directly (`node [yours.js] --word hello`), you'll
+need to `npm install minimist` in your exercise directory
+* If you get a message like `Error: Cannot find module 'chalk'`, see previous hint
 
 ## Resources
 

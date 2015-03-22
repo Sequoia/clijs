@@ -17,6 +17,7 @@ var word        = ipsum({ count:1, units:'words' });
 var wordSwitch  = util.format('--%s=%s','word', word);
 
 exports.verify = verify({ modeReset: true }, function (args, t) {
+  t.equal(args.length, 1, 'Passed YOURFILE.js (clijs verify YOURFILE.js)');
   args.push(wordSwitch);
   var ps = cp.spawnSync(process.execPath, args);
   var argStr = args.join(' ');

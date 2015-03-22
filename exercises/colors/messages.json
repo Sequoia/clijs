@@ -1,0 +1,34 @@
+[
+  {
+    "type" : "error",
+    "message" : "AssertionError: missing path at Module.require (module.js:363:3)"
+  },
+  {
+    "type" : "error",
+    "message" : "ReferenceError: defined is not defined at repl:1:1"
+  },
+  {
+    "type" : "info",
+    "message" : "user Duchess has logged in"
+  },
+  {
+    "type" : "warning",
+    "message" : "Warning: disk space low. Remaining space: 139MB"
+  },
+  {
+    "type" : "info",
+    "message" : "user the_jelly_don has logged in"
+  },
+  {
+    "type" : "warning",
+    "message" : "Warning: CPU temperature is approaching threshold of 59 degrees Celsius"
+  },
+  {
+    "type" : "error",
+    "message" : "Parse error: syntax error, unexpected T_PAAMAYIM_NEKUDOTAYIM"
+  },
+  {
+    "type" : "info",
+    "message" : "user Duchess has logged out"
+  }
+]
