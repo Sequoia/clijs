@@ -45,8 +45,8 @@ exports.verify = verify({ modeReset: true}, function (args, t) {
     var myargs    = [solutionPath, msgJsonPath].concat(call.switches);
 
     Q.Promise(function(resolve){
-      sayRunning(theirargs);
-      process.nextTick(resolve);
+      t.comment('node ' + theirargs.join(' '));
+      resolve();
     })
     .then(function(){
       return [
@@ -55,18 +55,15 @@ exports.verify = verify({ modeReset: true}, function (args, t) {
       ];
     })
     .spread(function(theirs, mine){
-      console.log(theirs.stdout);
-      
       //@todo there's probably a better way to do this
-      var numLines = theirs.stdout.toString().split('\n').length -1;
+      var theirLines = theirs.stdout.toString().split('\n');
+      var myLines    = mine.stdout.toString().split('\n');
+      var numLines = theirLines.length -1;
+
       t.equal(numLines, call.linesExpected, 'correct number of messages printed');
-      //return [theirs.stdout.toString(), mine.stdout.toString()];
-      return [theirs, mine];
-    })
-    .spread(function(theirs,mine){
-      t.ok((theirs.stdout.toString() === mine.stdout.toString()), 'messages formatted correctly');
-      t.skip('(ignore this test)'); //@FIXME HAAAAAAAACK
-      //@todo final test ALWAYS outputs AFTER `console.log(theirs.stdout) above
+
+      t.equal(theirLines[0], myLines[0], 'messages formatted correctly');
+
       done();
     })
     .catch(function(err){
