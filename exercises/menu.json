@@ -1,0 +1,9 @@
+{
+  "Using process.argv": "exercises/using_argv/",
+  "More process.argv": "exercises/more_argv/",
+  "Using Minimist": "exercises/using_minimist/",
+  "More Minimist": "exercises/more_minimist/",
+  "Colors": "exercises/colors/",
+  "Tables": "exercises/tables/"
+}
+
