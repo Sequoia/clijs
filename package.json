@@ -28,6 +28,8 @@
     "async": "^0.9.0",
     "chalk": "^1.0.0",
     "child-process-promise": "^1.0.1",
+    "cli-table": "^0.3.1",
+    "inquirer": "^0.8.2",
     "lodash": "^3.5.0",
     "lorem-ipsum": "^1.0.1",
     "minimist": "^1.1.1",
@@ -42,6 +44,7 @@
     "More process.argv": "exercises/more_argv/",
     "Using Minimist": "exercises/using_minimist/",
     "More Minimist": "exercises/more_minimist/",
-    "Colors!": "exercises/colors/"
+    "Colors": "exercises/colors/",
+    "Tables": "exercises/tables/"
   }
 }

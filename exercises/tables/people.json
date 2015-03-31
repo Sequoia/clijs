@@ -1,0 +1,48 @@
+[
+  {
+    "name" : "Shanté",
+    "color": "blue",
+    "children": ["Sherry", "Dalia"]
+  },
+  {
+    "name" : "Mariana",
+    "color": "red",
+    "children": []
+  },
+  {
+    "name" : "Evyatar",
+    "color": "red",
+    "children": ["Thalia"]
+  },
+  {
+    "name" : "Fatima Zahra Ndiaye",
+    "color": "yellow",
+    "children": ["Ousmane", "Mouhamed", "Yacine", "Papy"]
+  },
+  {
+    "name" : "Celinda",
+    "color": "yellow",
+    "children": ["Trey", "Levanna"]
+  },
+  {
+    "name" : "Stölp",
+    "color": "red",
+    "children": ["Stefan", "Klaus", "Nicoletta", "Antonia"]
+  },
+  {
+    "name" : "Orçun",
+    "color": "blue",
+    "children": ["Lars", "Trevor"]
+  },
+  {
+    "name" : "Sequoia",
+    "color": "blue",
+    "children": ["Aiden", "Kaiden", "Jayden", "Braydon", "Jasper", "Jasper II", "Chloë"]
+
+  },
+  {
+    "name" : "Aisha",
+    "color": "blue",
+    "children": []
+  }
+]
