@@ -4,6 +4,7 @@
   "Using Minimist": "exercises/using_minimist/",
   "More Minimist": "exercises/more_minimist/",
   "Colors": "exercises/colors/",
-  "Tables": "exercises/tables/"
+  "Tables": "exercises/tables/",
+  "Using Commander": "exercises/using_commander/"
 }
 

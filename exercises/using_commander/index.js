@@ -1,4 +1,5 @@
-"use strict"
+(function(){
+"use strict";
 
 var _            = require('lodash');
 var fs           = require('fs');
@@ -41,8 +42,11 @@ exports.verify = verify({ modeReset: true }, function (args, t) {
 
 exports.run = function(args) {
   args = args.concat(_.sample(argVariants));
-  console.info('running: ' + chalk.yellow(process.execPath + ' ' + args.join(' '))+'');
-  var ps = cp.spawn(process.execPath, args)
+  console.info('running: ' + chalk.yellow('node ' + args.join(' '))+'');
+  var ps = cp.spawn(process.execPath, args);
   ps.stdout.pipe(process.stdout);
   ps.stderr.pipe(process.stderr);
-}
+};
+
+return exports;
+})();
