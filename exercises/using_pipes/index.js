@@ -12,23 +12,38 @@ exports.solution    = fs.readFileSync(path.join(__dirname, 'solution.js'), 'utf8
 exports.boilerplate = fs.readFileSync(path.join(__dirname, 'boilerplate.js'), 'utf8');
 
 exports.verify = verify({ modeReset: true }, function (args, t) {
-  // create child process
-  var child = cp.spawnSync(process.execPath, args, {
-    input: fs.readFileSync(path.join(__dirname, 'macbeth.txt'))
+
+  // define test cases
+  var cases = [
+    {word: "thou",   lines: 4},
+    {word: "dagger", lines: 2},
+    {word: "eyes",   lines: 2}
+  ];
+
+  // verify each test case
+  cases.forEach(function(test) {
+    // child args
+    var childArgs = args.concat("--word="+test.word);
+
+    // create child process
+    t.comment("running: " + process.execPath + " " + childArgs.join(" "));
+    var child = cp.spawnSync(process.execPath, childArgs, {
+      input: fs.readFileSync(path.join(__dirname, 'macbeth.txt'))
+    });
+
+    // get output of child process; trim whitespace
+    var actual = child.stdout.toString().replace(/^\s+|\s+$/, '');
+
+    // verify number of lines
+    var lines  = actual.split(/\n/);
+    t.equal(lines.length, test.lines, 'There should be ' + test.lines + ' matching lines');
+
+    // check if 'thou' is in each line
+    var isThou = lines.every(function(line) {
+      return line.toLowerCase().indexOf(test.word) !== -1;
+    });
+    t.ok(isThou, "'" + test.word + "' should be present in each line");
   });
-
-  // get output of child process; trim whitespace
-  var actual = child.stdout.toString().replace(/^\s+|\s+$/, '');
-
-  // verify number of lines
-  var lines  = actual.split(/\n/);
-  t.equal(lines.length, 4, 'There should be 4 matching lines');
-
-  // check if 'thou' is in each line
-  var isThou = lines.every(function(line) {
-    return line.toLowerCase().indexOf('thou') !== -1;
-  });
-  t.ok(isThou, "'Thou' should be present in each line");
 
   // done
   t.end();
