@@ -13,7 +13,7 @@ exports.boilerplate = fs.readFileSync(path.join(__dirname, 'boilerplate.js'), 'u
 
 exports.verify = verify({ modeReset: true }, function (args, t) {
   // create child process
-  var child = cp.spawnSync(process.execPath, [args], {
+  var child = cp.spawnSync(process.execPath, args, {
     input: fs.readFileSync(path.join(__dirname, 'macbeth.txt'))
   });
 
@@ -35,8 +35,8 @@ exports.verify = verify({ modeReset: true }, function (args, t) {
 });
 
 exports.run = function(args) {
-  console.info(chalk.yellow("running: %s %s"), process.execPath, args);
-  var child = cp.spawnSync(process.execPath, [args], {
+  console.info(chalk.yellow("running: %s %s"), process.execPath, args.join(' '));
+  var child = cp.spawnSync(process.execPath, args, {
     input: fs.readFileSync(path.join(__dirname, 'macbeth.txt'))
   });
   process.stdout.write(child.stdout);
