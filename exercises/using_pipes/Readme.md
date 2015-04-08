@@ -30,7 +30,7 @@ value specified by the `--word` argument
 $ cat macbeth.txt | node yoursolution.js --word=thou
 ```
 
-# How to search for string inside another string
+## How to search for string inside another string
 
 In JavaScript, you can search for String within another String using the
 [indexOf][indexOf] method. `indexOf` will find the first occurrence of the
