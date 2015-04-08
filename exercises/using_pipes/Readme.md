@@ -30,6 +30,35 @@ value specified by the `--word` argument
 $ cat macbeth.txt | node yoursolution.js --word=thou
 ```
 
+# How to search for string inside another string
+
+In JavaScript, you can search for String within another String using the
+[indexOf][indexOf] method. `indexOf` will find the first occurrence of the
+string your searching for starting with `0`. If no match is found, a `-1` is
+returned.
+
+```js
+var str = "abcdefghi";
+str.indexOf("a");   // 0
+str.indexOf("b");   // 1
+str.indexOf("def"); // 3
+str.indexOf("z");   // -1
+```
+
+You can do a **case-insensitive** search by converting each string to the same
+case before doing your search.
+
+```js
+// "world" is not found in the uppercase string
+var str = "HELLO WORLD";
+str.indexOf("world"); // -1
+
+// this time, let's try a converting to lowercase first
+var str = "HELLO WORLD";
+str = str.toLowerCase();
+str.indexOf("world"); // 6
+```
+
 ## Hints
 * Use `minimist` to easily get the named argument `--word`
 * You can install minimist using `$ npm install minimist`
@@ -41,3 +70,5 @@ $ cat macbeth.txt | node yoursolution.js --word=thou
 ## Resources
 * https://nodejs.org/api/buffer.html#buffer_buf_tostring_encoding_start_end
 * https://nodejs.org/api/process.html#process_process_stdin
+
+[indexOf]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf
