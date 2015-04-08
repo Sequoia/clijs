@@ -44,7 +44,6 @@ the normal `String` methods, we'll first have to convert it to a string.
 var str = myBuffer.toString()
 ```
 
-
 ## How to search for string inside another string
 
 In JavaScript, you can search for String within another String using the
@@ -97,6 +96,7 @@ var lines = multilineString.split("\n"); // [line1, line2, line3]
 ```
 
 ## Hints
+
 * Use `minimist` to easily get the named argument `--word`
 * You can install minimist using `$ npm install minimist`
 * `clijs run` will automatically pipe text into your program's stdin
@@ -105,6 +105,7 @@ var lines = multilineString.split("\n"); // [line1, line2, line3]
 * You can convert a Buffer to a String using `buffer.toString()`
 
 ## Resources
+
 * https://nodejs.org/api/buffer.html#buffer_buf_tostring_encoding_start_end
 * https://nodejs.org/api/process.html#process_process_stdin
 
