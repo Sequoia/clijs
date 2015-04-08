@@ -30,6 +30,21 @@ value specified by the `--word` argument
 $ cat macbeth.txt | node yoursolution.js --word=thou
 ```
 
+## Working with buffers
+
+In node.js, piped data is usually transported in [Buffer][Buffer] objects.
+Buffers provided convenience for a wide variety of uses, but in this lesson,
+we'll only concern ourselves with converting them to usable Strings.
+
+When reading from `process.stdin` you'll get a buffer object. To gain access to
+the normal `String` methods, we'll first have to convert it to a string.
+
+```js
+// it's as simple as
+var str = myBuffer.toString()
+```
+
+
 ## How to search for string inside another string
 
 In JavaScript, you can search for String within another String using the
@@ -71,4 +86,5 @@ str.indexOf("world"); // 6
 * https://nodejs.org/api/buffer.html#buffer_buf_tostring_encoding_start_end
 * https://nodejs.org/api/process.html#process_process_stdin
 
+[Buffer]: https://nodejs.org/api/buffer.html
 [indexOf]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf
