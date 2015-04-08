@@ -74,6 +74,28 @@ str = str.toLowerCase();
 str.indexOf("world"); // 6
 ```
 
+## How to split lines
+
+Multi-line input may seem like chore to work with, but it doesn't have to be!
+Luckily, it's really easy to break a string apart and work on each line
+individually.
+
+The String [split][split] method will split a string based on a specified
+separator. The resulting value will be an `Array` containing the separate string
+parts.
+
+```js
+var str = "dat-cat-tho";
+str.split("-"); // ["dat", "cat", "tho"]
+```
+
+To do this with a multi-line string, all we have to do is splint the string
+using the newline character `\n` as the separator.
+
+```js
+var lines = multilineString.split("\n"); // [line1, line2, line3]
+```
+
 ## Hints
 * Use `minimist` to easily get the named argument `--word`
 * You can install minimist using `$ npm install minimist`
@@ -88,3 +110,4 @@ str.indexOf("world"); // 6
 
 [Buffer]: https://nodejs.org/api/buffer.html
 [indexOf]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf
+[split]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
