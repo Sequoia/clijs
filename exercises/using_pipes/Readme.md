@@ -36,6 +36,8 @@ $ cat macbeth.txt | node yoursolution.js --word=thou
 * `clijs run` will automatically pipe text into your program's stdin
 * Remember to match (e.g.,) `Thou` and `thou` (case insensitive)
 * You can access stdin via `process.stdin`
+* You can convert a Buffer to a String using `buffer.toString()`
 
 ## Resources
+* https://nodejs.org/api/buffer.html#buffer_buf_tostring_encoding_start_end
 * https://nodejs.org/api/process.html#process_process_stdin
