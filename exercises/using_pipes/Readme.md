@@ -32,6 +32,7 @@ $ cat macbeth.txt | node yoursolution.js --word=thou
 
 ## Hints
 * Use `minimist` to easily get the named argument `--word`
+* You can install minimist using `$ npm install minimist`
 * Remember to match (e.g.,) `Thou` and `thou` (case insensitive)
 * You can access stdin via `process.stdin`
 
