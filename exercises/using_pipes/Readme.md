@@ -109,6 +109,13 @@ var lines = multilineString.split("\n"); // [line1, line2, line3]
 * https://nodejs.org/api/buffer.html#buffer_buf_tostring_encoding_start_end
 * https://nodejs.org/api/process.html#process_process_stdin
 
+## Moar Streamz!
+
+Piped data can be a very effective way for moving things from one component to
+another. This exercise is just barely scratching the surface of how powerful
+streams can be. If you're interested in learning more, please check out
+https://github.com/substack/stream-adventure
+
 [Buffer]: https://nodejs.org/api/buffer.html
 [indexOf]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf
 [split]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
