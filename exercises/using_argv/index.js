@@ -9,7 +9,7 @@ var chalk        = require('chalk');
 var cp           = require('child_process');
 var verify       = require('adventure-verify');
 
-exports.problem = fs.readFileSync(__dirname + '/problem.md', 'utf8');
+exports.problem = fs.readFileSync(__dirname + '/Readme.md', 'utf8');
 exports.solution = fs.readFileSync(__dirname + '/solution.js', 'utf8');
 exports.boilerplate = fs.readFileSync(__dirname + '/boilerplate.js', 'utf8');
 

@@ -7,7 +7,7 @@ var cp           = require('child_process');
 var stream       = require('stream');
 var verify       = require('adventure-verify');
 
-exports.problem     = fs.readFileSync(path.join(__dirname, 'problem.md'), 'utf8');
+exports.problem     = fs.readFileSync(path.join(__dirname, 'Readme.md'), 'utf8');
 exports.solution    = fs.readFileSync(path.join(__dirname, 'solution.js'), 'utf8');
 exports.boilerplate = fs.readFileSync(path.join(__dirname, 'boilerplate.js'), 'utf8');
 
