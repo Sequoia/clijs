@@ -5,7 +5,8 @@
   "More Minimist": "exercises/more_minimist/",
   "Colors": "exercises/colors/",
   "Tables": "exercises/tables/",
-  "Using Pipes": "exercises/using_pipes/",
-  "Using Commander": "exercises/using_commander/"
+  "Using Commander": "exercises/using_commander/",
+  "Offering Help": "exercises/commander_help/",
+  "Using Pipes": "exercises/using_pipes/"
 }
 
