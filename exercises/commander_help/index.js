@@ -3,7 +3,6 @@
 
 var fs      = require('fs');
 var path    = require('path');
-var program = require('commander');
 var cp      = require('child_process');
 var verify  = require('adventure-verify');
 var _       = require('lodash');
